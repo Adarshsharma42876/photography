@@ -1,0 +1,227 @@
+/* Navbar Brand */
+
+.navbar-brand {
+    font-size: 2rem !important;
+    /* margin-left: 0; */
+}
+
+.fullsection{ background: url(img/img.jpeg)no-repeat; min-height: 600px; background-size: cover;display: flex;align-items: center;}
+.fullsectionText{text-align: center;}
+/* Hero Section */
+  
+.pacificNothwestText{ text-align: center;} 
+
+.text-container {
+    text-align: right; /* Align text to the right side */
+    max-width: 600px; /* Set maximum width for better readability */
+    margin: 0 auto; /* Center the text container horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #f4f4f4; /* Background color for the text container */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.text-container p {
+    margin-bottom: 16px; /* Add margin bottom to paragraphs for spacing */
+    font-size: 18px; /* Set font size */
+    line-height: 1.6; /* Set line height for better readability */
+}
+
+.text-container h2 {
+    font-size: 24px; /* Set font size */
+    margin-bottom: 16px; /* Add margin bottom for spacing */
+}
+
+.text-container p:first-child {
+    margin-top: 0; /* Remove top margin for the first paragraph */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1,
+.hero p,
+.hero a {
+    color: white;
+}
+
+
+.hero .hero a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* Grid Photo Gallery */
+
+.Portfolio-h1 {
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.col-md-4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.col-md-4 img {
+    transition: transform 0.3s ease;
+}
+
+.col-md-4:hover img {
+    transform: scale(3);
+}
+ 
+
+/* Testimonial heading */
+
+.testimonial-h1 {
+    text-align: center;
+}
+
+
+/* Testimonial Slider */
+
+.testimonial {
+    padding: 50px 0;
+}
+
+.testimonial-content h3 {
+    text-align: center;
+}
+
+.testimonial-content p {
+    margin-left: 20px;
+}
+
+.testimonial img {
+    height: 500px;
+    border-radius: 20px;
+}
+
+.carousel-caption {
+    text-align: center;
+    color: #000;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        font-size: 1.8rem !important;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-size: 2rem !important;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .navbar-brand {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-img {
+        max-width: 100%;
+        height: auto;
+    }
+    .testimonial-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .testimonial-img-container {
+        max-width: 100%;
+        height: auto;
+    }
+    .testimonial-content {
+        width: 100%;
+    }
+}
+
+.testimonialheading{ max-width: 500PX; margin: 0 auto; text-align: center; position: relative;}
+.testimonialheading::before {content: '';position: absolute;background: url(img/bgline.png) no-repeat;right: 95%;top: -100px;height: 440px;width: 100%;background-size: contain;}
+.testimonialheading p {margin-top: var(--pad40);}
+
+
+
+.welcomeSectionText{ padding-left: var(--pad100); max-width: 560px; position: relative; padding-top: var(--pad30);}
+.welcomeSectionText::before{content: '';position: absolute;background: url(../images/bgline.png) no-repeat; left: 0; top:30px; height: 440px;width: 100%; background-size: contain; z-index: -1;}
+.welcomeSectionText h2{ margin: var(--pad30) 0; margin-left: -70px;}
+.welcomeSectionText .button{margin-top: var(--pad30);}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    justify-content: center; /* Center the grid content horizontally */
+    align-items: center; /* Center the grid content vertically */
+}
+
+.grid-column {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+}
+
+.grid-item {
+    width: 50%;
+    height: 100%; /* Set your desired height here */
+    display: none; /* Hide all images by default */
+    object-fit: cover; 
+    margin-left: 300px;
+    /* This ensures the image maintains its aspect ratio */
+}
+
+.grid-item.active {
+    display: block; /* Display only the active image */
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px; /* Add some margin to separate from the grid */
+}
