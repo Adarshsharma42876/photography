@@ -5,7 +5,7 @@ This is a simple photography website showcasing the work of a photographer or a 
 ## Features
 
 - Hero Section: Introduces the website with a welcome message and invitation to explore the photography world.
-- Navigation Menu: Allows users to navigate to different sections of the website.
+- Navigation Menu: Allows users to navigate to different sections of the website. 
 - Photo Gallery: Displays a grid photo gallery showcasing the photographer's work.
 - Testimonial Slider: Presents testimonials from satisfied clients in a slider format.
 - Responsive Design: Built using Bootstrap, ensuring the website is responsive and displays well on various devices.
